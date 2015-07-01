@@ -1,0 +1,6 @@
+Moi khi lam la phai PUll code moi nhat ve
+Sau khi lam xong là
++Commit source lên: them ghi chú vào
++Sau dó push code lên
+----
+Nói ko s?a cùng 1 file ma 2 nguoi se bi conflict
