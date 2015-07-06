@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+
+<name>at_enigmainterworks_free</name>
+<version>3.1</version>
+<creationDate>2014</creationDate>
+<author>atjoomla</author>
+<authorEmail>info@atjoomla.com</authorEmail>
+<authorUrl>http://www.atjoomla.com</authorUrl>
+<copyright>atjoomla</copyright>
+
+<description>
+<![CDATA[
+<link href="../templates/at_enigmainterworks_free/admin/style.css" rel="stylesheet" type="text/css" media="all" />
+<p>Free Joomla! 2.5.x and Joomla 3.x Template from <a href="http://www.atjoomla.com" target="_blank">atjoomla.com</a> </p>
+<p>
+Upgrade <a href="http://atjoomla.com/upgrade" target="_blank">here</a><br />
+Click here for <a href="http://demo25.atjoomla.com/?template=at_enigmainterworks" target="_blank">PRO demo</a><br />
+</p>
+<img src="../templates/at_enigmainterworks_free/template_thumbnail.png" border="0" title="" alt=""/>
+]]>
+</description>
+
+<files>
+<filename>favicon.ico</filename>
+<filename>index.php</filename>
+<filename>component.php</filename>
+<filename>template_thumbnail.png</filename>
+<filename>template_preview.png</filename>
+<filename>templateDetails.xml</filename>
+
+<folder>admin</folder>
+<folder>html</folder>
+<folder>css</folder>
+<folder>scripts</folder>
+<folder>images</folder>
+<folder>language</folder>
+<folder>includes</folder>
+</files>
+
+<positions>
+<position>search</position>
+<position>left</position>
+<position>right</position>
+<position>pathway</position>
+<position>bottom1</position>
+<position>bottom2</position>
+<position>bottom3</position>
+<position>footer</position>
+<position>nav</position>
+<position>debug</position>
+</positions>
+
+<languages folder="language">
+<language tag="en-GB">en-GB/en-GB.tpl_at_enigmainterworks_free.ini</language>
+</languages>
+
+<config>
+<fields name="params">
+
+<!-- ADVANCED OPTIONS -->
+<fieldset name="advanced">
+<field name="colorStyle" type="list" default="default" label="Template Color" description="Choose Color Style">
+<option value="default">Default</option>
+<option value="style1">Style1</option>
+<option value="style2">Style2</option>
+<option value="style3">Style3</option>
+</field>
+
+<field name="logoFile" class="" type="media" default="" label="Logo" description="TPL_LOGO_DESC" />
+<field name="sitetitle"  type="text" default="" label="JGLOBAL_TITLE" description="JFIELD_ALT_PAGE_TITLE_LABEL" filter="string" />
+<field name="sitedescription"  type="text" default="" label="JGLOBAL_DESCRIPTION" description="JGLOBAL_SUBHEADING_DESC" filter="string" />
+<field name="logo_width" type="text" default="324" filter="string" size="20" label="Logo Width" description="Set the width of the logo in px (ex. 250px). Live it empty for default size" />
+<field name="logo_height" type="text" default="120" filter="string" size="20" label="Logo Height" description="Set the height of the logo in px (ex. 75px. Live it empty for default size)" />
+</fieldset>
+<!-- //ADVANCED OPTIONS -->
+
+<!-- CUSTOM SUFFIX -->
+<fieldset name="suffix_options" label="Custom Module Class Suffix">
+<field type="spacer" label="SUFFIX_NOTICE" />
+<field name="module_suffix_bg_color1" class="" type="color" default="#ffaa22" label="_color1" description="Edit suffix _color1" />
+<field name="module_suffix_bg_color2" class="" type="color" default="#ed145a" label="_color2" description="Edit suffix _color2" />
+<field name="module_suffix_bg_color3" class="" type="color" default="#7b0046" label="_color3" description="Edit suffix _color3" />
+<field name="module_suffix_bg_color4" class="" type="color" default="#9e005d" label="_color4" description="Edit suffix _color4" />
+<field name="module_suffix_bg_color5" class="" type="color" default="#eb2f2f" label="_color5" description="Edit suffix _color5" />
+<!--
+<field name="module_suffix_bg_color6" class="" type="color" default="#3120ab" label="_color6" description="Edit suffix _color6" />
+<field name="module_suffix_bg_color7" class="" type="color" default="#0f60d1" label="_color7" description="Edit suffix _color7" />
+<field name="module_suffix_bg_color8" class="" type="color" default="#3727b0" label="_color8" description="Edit suffix _color8" />
+<field name="module_suffix_bg_color9" class="" type="color" default="#157f8f" label="_color9" description="Edit suffix _color9" />
+<field name="module_suffix_bg_color10" class="" type="color" default="#19a847" label="_color10" description="Edit suffix _color10" />
+<field name="module_suffix_bg_color11" class="" type="color" default="#543480" label="_color11" description="Edit suffix _color11" />
+<field name="module_suffix_bg_color12" class="" type="color" default="#0d0807" label="_color12" description="Edit suffix _color12" />
+<field name="module_suffix_bg_color13" class="" type="color" default="#666666" label="_color13" description="Edit suffix _color13" />
+<field name="module_suffix_bg_color14" class="" type="color" default="#1d1d1f" label="_color14" description="Edit suffix _color14" />
+<field name="module_suffix_bg_color15" class="" type="color" default="#14131a" label="_color15" description="Edit suffix _color15" />
+<field name="module_suffix_bg_color16" class="" type="color" default="#19a847" label="_color16" description="Edit suffix _color16" />
+-->
+</fieldset>
+<!-- CUSTOM SUFFIX -->
+
+<!-- SLIDESHOW  -->
+<fieldset name="4" label="Slideshow">
+
+<field name="slideshow_use" type="radio" default="0" label="Use Slideshow" description="Enable/Disable Slideshow">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</field>
+
+<field name="slideshow_image1" type="media" default="" label="Slideshow Image 1" description="Slideshow Image 1" />
+<field name="slideshow_image2" type="media" default="" label="Slideshow Image 2" description="Slideshow Image 2" />
+<field name="slideshow_image3" type="media" default="" label="Slideshow Image 3" description="Slideshow Image 3" />
+<field name="slideshow_image4" type="media" default="" label="Slideshow Image 4" description="Slideshow Image 4" />
+<field name="slideshow_image5" type="media" default="" label="Slideshow Image 5" description="Slideshow Image 5" />
+<field name="slideshow_image6" type="media" default="" label="Slideshow Image 6" description="Slideshow Image 6" />
+<field name="slideshow_image7" type="media" default="" label="Slideshow Image 7" description="Slideshow Image 7" />
+
+
+<field name="caption1" type="textarea" default="" label="Slideshow Image1 text" description="enter a text"  rows="6" cols="20" />
+<field name="caption2" type="textarea" default="" label="Slideshow Image2 text" description="enter a text"  rows="6" cols="20" />
+<field name="caption3" type="textarea" default="" label="Slideshow Image3 text" description="enter a text"  rows="6" cols="20" />
+<field name="caption4" type="textarea" default="" label="Slideshow Image4 text" description="enter a text"  rows="6" cols="20" />
+<field name="caption5" type="textarea" default="" label="Slideshow Image5 text" description="enter a text"  rows="6" cols="20" />
+<field name="caption6" type="textarea" default="" label="Slideshow Image6 text" description="enter a text"  rows="6" cols="20" />
+<field name="caption7" type="textarea" default="" label="Slideshow Image7 text" description="enter a text"  rows="6" cols="20" />
+
+
+<field name="slideshow_effect" type="checkboxes" default="fade" label="Slideshow Effect" description="Select the Slideshow Effects, random all Effects.">
+<option value="random">Random</option>
+<option value="sliceDownRight">Down Right</option>
+<option value="sliceDownLeft">Down Left</option>
+<option value="sliceUpRight">Up Right</option>
+<option value="sliceUpLeft">Up Left</option>
+<option value="sliceUpDown">Up Down</option>
+<option value="sliceUpDownLeft">Down Left</option>
+<option value="fold">Fold</option>
+<option value="fade">Fade</option>
+</field>
+
+
+<field name="slideshow_slices" type="text" default="15" label="Slices *30" description="Slices 2 - 50 make not more *Default 30" />
+<field name="slideshow_animspeed" type="text" default="500" label="Speed *500" description="Speed to next Image *Default 500" />
+<field name="slideshow_pausetime" type="text" default="5000" label="Showtime *5000" description="Showtime Image *Default 5000" />
+
+
+<field name="slideshow_startslide" type="list" default="0" label="Startimage" description="Select Image to start Slideshow.">
+<option value="0">1</option>
+<option value="1">2</option>
+<option value="2">3</option>
+<option value="3">4</option>
+<option value="4">5</option>
+<option value="5">6</option>
+<option value="6">7</option>
+</field>
+
+<field name="slideshow_controlnav" type="radio" default="0" label="Contol Navigation show" description="Show / hide the Control Navigation.">
+<option value="0">Yes</option>
+<option value="1">No</option>
+</field>
+</fieldset>
+<!-- //SLIDESHOW  -->
+
+<!-- MODULE OPTIONS -->
+<fieldset name="modl_opt" label="More Options">
+<field type="spacer" label="ONLY_PRO" />	
+
+<!-- TEMPLATE WIDTH -->
+<field name="fluidContainer" type="radio" class="btn-group" default="0" label="TPL_FLUID_LABEL" description="Choose between static or fullscreen resolution">
+<option value="0" disabled="true">TPL_STATIC</option>
+<option value="1" disabled="true">TPL_FLUID</option>
+</field>
+
+<field name="templateColor" class="" disabled="true" type="color" default="#3b7bb9" label="TPL_COLOR_LABEL" description="Custom template color at your choice" />
+
+<field name="body_textcolor" class="" disabled="true" type="color" default="#333333" label="Body Text Color" description="Choose Body Text Color" />
+
+<field name="responsv" type="radio" class="btn-group" default="0" label="Enable Responsive" description="Eanable/Disable Responsive Layout">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="bootstrapfw" type="radio" class="btn-group" default="0" label="Load Bootstrap FW" description="Enable/Disable Bootstrap Framework">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="extens" type="radio" class="btn-group" default="0" label="Enable Extensions" description="Enable Extension Futures">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="templbg" type="radio" class="btn-group" default="0" label="Template Background" description="Enable/Disable or upload template background">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="menuopt" type="radio" class="btn-group" default="0" label="Horizontal Menu" description="Extra Menu Options">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="googlfonts" type="radio" class="btn-group" default="0" label="Google Fonts" description="Load more than 600 different google fonts">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="fontsizee" type="radio" class="btn-group" default="0" label="Font Size" description="Increase/Decrease font size">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="typogr" type="radio" class="btn-group" default="0" label="Typography" description="Large typography">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="modposit" type="radio" class="btn-group" default="0" label="Extra Positions" description="Load more positions">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="analytcss" type="radio" class="btn-group" default="0" label="Google Analytics" description="Google analytics trackging code">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+
+<field name="copyr_ft" type="radio" class="btn-group" default="0" label="Remove Footer Link" description="Remove footer copyrights">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+</fieldset>
+
+</fields>
+</config>
+</extension>
