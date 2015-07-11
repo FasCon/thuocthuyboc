@@ -32,7 +32,7 @@
 		/>
 		<field name="contact_message"
 			type="textarea"
-			cols="50"
+			cols="48"
 			rows="10"
 			id="contact-message"
 			description="COM_CONTACT_CONTACT_ENTER_MESSAGE_DESC"
