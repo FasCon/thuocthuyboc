@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_psinstantcontact</name>
+	<author>Panchsoft Technologies</author>
+	<creationDate>August 2014</creationDate>
+	<copyright>(C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>info@panchsoft.com</authorEmail>
+	<authorUrl>www.panchsoft.com</authorUrl>
+	<version>3.1</version>
+	<description>MOD_PSINSTANTCONTACT_XML_DESCRIPTION</description>
+	<files>
+		<folder>assets</folder>
+		<folder>captcha</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_psinstantcontact">mod_psinstantcontact.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_psinstantcontact.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_psinstantcontact.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_psinstantcontact.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			
+				<field name="email" type="email"
+			        label="MOD_PSINSTANTCONTACT_CONTACT_EMAIL_FIELD_TITLE"
+			        description="MOD_PSINSTANTCONTACT_CONTACT_EMAIL_FIELD_DESC"
+			        required="true"
+			        size="30"
+			        class="inputbox"
+			        default="info@panchsoft.com"
+			        validate="email" />	
+			        
+			   	<field
+					name="load_jquery"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_PSINSTANTCONTACT_LOAD_JQUERY_FIELD_TITLE"
+					description="MOD_PSINSTANTCONTACT_LOAD_JQUERY_FIELD_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					default="default"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
